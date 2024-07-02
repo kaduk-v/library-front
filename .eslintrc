@@ -1,0 +1,6 @@
+{
+  "extends": "eslint-config-cryptolint",
+  "rules": {
+    "no-restricted-imports": "off"
+  }
+}
