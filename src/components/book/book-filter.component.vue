@@ -51,6 +51,6 @@ const removeFilter = () => {
 
 <style scoped lang="sass">
 .book-filter
-  border-radius: 15px
+  border-radius: 10px
 
 </style>
