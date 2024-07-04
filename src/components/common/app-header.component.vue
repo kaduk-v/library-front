@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import LibraryManager from '@/components/library-manager.conponent.vue'
+import UserHeader
 
-const isLibraryManagerOpened = ref(false)
-const openLibraryManager = () => isLibraryManagerOpened.value = !isLibraryManagerOpened.value
+'@/components/common/user-header'
+import { ref } from 'vue'
+
+
+const isActionsMenuOpened = ref(false)
 
 </script>
 
@@ -27,11 +29,8 @@ const openLibraryManager = () => isLibraryManagerOpened.value = !isLibraryManage
       <v-btn icon="mdi-menu" variant="text" />
     </template>
 
-    <v-btn icon="mdi-plus" @click="openLibraryManager" variant="text" />
-    <v-btn icon="mdi-account" variant="text" />
+    <UserHeader />
   </v-app-bar>
-
-  <LibraryManager :opened="isLibraryManagerOpened" @update:opened="value => isLibraryManagerOpened = value"/>
 </template>
 
 <style scoped lang="sass">
