@@ -34,9 +34,9 @@ const removeFilter = () => {
         :key="filter.status"
         :value="filter.status"
         :prepend-icon="filter.icon"
-        color="primary"
         rounded
         tonal
+        class="pr-3 pl-5 mr-5"
       >
         {{ filter.name }}
       </v-chip>

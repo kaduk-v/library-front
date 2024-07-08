@@ -9,8 +9,9 @@ import * as directives from 'vuetify/directives'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import '@mdi/font/css/materialdesignicons.css'
 import { VTreeview } from 'vuetify/labs/VTreeview'
-
 import router from '@/router'
+
+import { VuetifyTheme, themes } from '@/plugins/vuetify'
 import App from '@/app.vue'
 
 const app = createApp(App)
@@ -23,7 +24,8 @@ app.config.errorHandler = (err, instance, info) => {
 
 const vuetify = createVuetify({
   theme: {
-    defaultTheme: 'light',
+    defaultTheme: VuetifyTheme.Light,
+    themes,
   },
   icons: {
     defaultSet: 'mdi',

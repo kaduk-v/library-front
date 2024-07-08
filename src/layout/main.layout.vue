@@ -6,13 +6,13 @@ import AppHeader from '@/components/common/app-header.component.vue'
 </script>
 
 <template>
-    <AppHeader />
-    <CategoryNavigation />
+  <AppHeader />
+  <CategoryNavigation />
 
-    <v-main class="">
-      <BookFilter />
-      <BookList />
-    </v-main>
+  <v-main>
+    <BookFilter />
+    <BookList />
+  </v-main>
 </template>
 
 <style scoped>
