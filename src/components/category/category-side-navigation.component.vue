@@ -35,17 +35,24 @@ const selection: any[] = []
 </script>
 
 <template>
-  <v-navigation-drawer rounded class="mt-10 bg-purple" width="300">
-    <v-treeview :items="categories"
-                v-model="selection"
-                item-title="name"
-                item-key="id"
-                open-all
-                active-color="green"
-    />
+  <v-navigation-drawer border="none" class="category-navigation-drawer" width="400" fixed>
+    <v-card class="ma-10 category-navigation-wapper" over>
+      <v-card-title>Categories</v-card-title>
+
+      <v-treeview :items="categories"
+                  v-model="selection"
+                  item-title="name"
+                  item-key="id"
+                  open-all
+                  active-color="green"
+      />
+
+    </v-card>
   </v-navigation-drawer>
 </template>
 
-<style scoped>
-
+<style scoped lang="sass">
+.category-navigation-wapper
+  height: calc(100% - 80px)
+  overflow: auto
 </style>

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import UserHeader
-
-'@/components/common/user-header'
+import UserHeader from '@/components/user/user-header.component.vue'
 import { ref } from 'vue'
 
 
@@ -10,7 +8,7 @@ const isActionsMenuOpened = ref(false)
 </script>
 
 <template>
-  <v-app-bar app class="app-header">
+  <v-app-bar class="app-header">
     <v-app-bar-title>
       <v-icon>mdi-library</v-icon>
 
@@ -37,6 +35,7 @@ const isActionsMenuOpened = ref(false)
 .app-header
   display: flex
   align-items: stretch
+  background: #eee
 
 .search-btn
   margin: 0 16px

@@ -1,7 +1,5 @@
 <template>
-  <v-responsive class=" rounded">
-    <v-app id="app" class="bg-grey">
-      <router-view/>
-    </v-app>
-  </v-responsive>
+  <v-app id="app">
+    <router-view/>
+  </v-app>
 </template>

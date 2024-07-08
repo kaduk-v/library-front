@@ -22,31 +22,26 @@ const removeFilter = () => {
 </script>
 
 <template>
-  <v-container class="book-filter">
-    <v-row>
-      <v-col cols="12">
-        <v-chip-group
-          column
-          multiple
-          v-model="selectedFilters"
-          @change="applyFilters"
-        >
-          <v-chip
-            v-for="filter in filters"
-            :key="filter.status"
-            :value="filter.status"
-            :prepend-icon="filter.icon"
-            color="primary"
-            rounded
-            tonal
-          >
-            {{ filter.name }}
-          </v-chip>
-        </v-chip-group>
-      </v-col>
-    </v-row>
-
-  </v-container>
+  <v-card rounded class="ma-10 pa-5">
+    <v-chip-group
+      column
+      multiple
+      v-model="selectedFilters"
+      @change="applyFilters"
+    >
+      <v-chip
+        v-for="filter in filters"
+        :key="filter.status"
+        :value="filter.status"
+        :prepend-icon="filter.icon"
+        color="primary"
+        rounded
+        tonal
+      >
+        {{ filter.name }}
+      </v-chip>
+    </v-chip-group>
+  </v-card>
 </template>
 
 <style scoped lang="sass">

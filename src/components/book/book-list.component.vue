@@ -178,14 +178,13 @@ const markAsReading = (book) => {
 </script>
 
 <template>
-  <v-container>
-    <v-row>
+    <v-row class="mr-7 ml-7">
       <v-col v-for="book in books"
              :key="book.id"
              cols="12"
              sm="6"
              md="4"
-             lg="3"
+             lg="4"
              xl="2"
       >
         <v-card class="mx-auto d-flex flex-column justify-space-between"
@@ -229,7 +228,6 @@ const markAsReading = (book) => {
         </v-card>
       </v-col>
     </v-row>
-  </v-container>
 </template>
 
 <style scoped lang="sass">
