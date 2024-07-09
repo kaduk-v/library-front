@@ -12,7 +12,7 @@ const filters = [
   { name: 'Читаю', icon: 'mdi-book-open-page-variant-outline', status: BookStatus.Reading },
   { name: 'Прочитано', icon: 'mdi-check-all', status: BookStatus.Read },
   { name: 'Позичено', icon: 'mdi-account-arrow-right', status: BookStatus.Borrowed },
-  { name: 'Доступно', icon: 'mdi-book-open-blank-variant-outline', status: BookStatus.Available },
+  { name: 'Доступно', icon: 'mdi-book-open-blank-variant-outline', status: BookStatus.Available }
 ]
 
 const applyFilters = () => {
@@ -22,7 +22,7 @@ const removeFilter = () => {
 </script>
 
 <template>
-  <v-card rounded class="ma-10 pa-5">
+  <v-card class="ma-10 pa-5 rounded-lg">
     <v-chip-group
       column
       multiple

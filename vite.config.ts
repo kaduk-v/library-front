@@ -10,7 +10,16 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      sass: {
+        additionalData: `
+          @import "./src/assets/_theme.sass"
+        `,
+      },
+    },
+  },
 })

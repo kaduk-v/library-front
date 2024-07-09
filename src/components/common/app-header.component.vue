@@ -35,10 +35,10 @@ const isActionsMenuOpened = ref(false)
     <v-spacer></v-spacer>
 
     <template v-if="$vuetify.display.mdAndDown">
-      <v-btn icon="mdi-format-list-bulleted" variant="flat" class="mr-4"/>
+      <v-btn icon="mdi-format-list-bulleted" variant="flat" class="mr-4" />
     </template>
 
-    <v-btn @click="toggleTheme" :icon="themeIcon" variant="flat" class="mr-4"/>
+    <v-btn @click="toggleTheme" :icon="themeIcon" variant="flat" class="mr-4" />
 
     <UserProfile />
   </v-app-bar>
@@ -49,6 +49,6 @@ const isActionsMenuOpened = ref(false)
   padding: 10px
 
   .title
-    color: orangered
+    @include theme-color(accent)
 
 </style>

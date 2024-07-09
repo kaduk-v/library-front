@@ -35,8 +35,8 @@ const selection: any[] = []
 </script>
 
 <template>
-  <v-navigation-drawer border="none" class="category-navigation-drawer" width="400" fixed>
-    <v-card class="ma-10 category-navigation-wapper" over>
+  <v-navigation-drawer border="none" class="category-navigation-drawer bg-background" width="400" fixed>
+    <v-card class="ma-10 category-navigation-wapper rounded-lg" over>
       <v-card-title class="">Categories</v-card-title>
 
       <v-treeview :items="categories"

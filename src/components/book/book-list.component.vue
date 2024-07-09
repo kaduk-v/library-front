@@ -174,7 +174,7 @@ const books: BookItem[] = [
            cols="12"
            sm="6"
            md="4"
-           lg="4"
+           lg="3"
            xl="2"
     >
       <BookListItem :book="book" />
@@ -183,23 +183,4 @@ const books: BookItem[] = [
 </template>
 
 <style scoped lang="sass">
-.chip-container
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  display: flex
-  justify-content: end
-  padding: 5px
-  color: rgba(0, 128, 0, 0.5)
-
-.reading
-  color: rgba(0, 128, 0, 0.6)
-
-.read
-  color: rgba(128, 0, 128, 0.43)
-
-.borrowed
-  color: rgba(255, 0, 0, 0.56)
-
 </style>

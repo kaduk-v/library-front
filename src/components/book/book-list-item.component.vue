@@ -20,22 +20,22 @@ const markAsReading = (book) => {
 </script>
 
 <template>
-  <v-card class="mx-auto d-flex flex-column justify-space-between" height="450">
+  <v-card class="mx-auto d-flex flex-column justify-space-between rounded-lg" height="550">
     <v-img :src="book.image"
            class="align-end"
-           height="240px"
-           min-height="240px"
+           height="270px"
+           min-height="270px"
            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
            cover
     >
       <div class="chip-container ga-2">
-        <v-chip v-if="book.status==='reading'" color="rgba(0, 128, 0, 0.5)" variant="elevated">
+        <v-chip v-if="book.status==='reading'" class="book-status" :class="book.status" variant="elevated">
           <v-icon>mdi-book-open-page-variant-outline</v-icon>
         </v-chip>
-        <v-chip v-if="book.status==='read'" color="rgba(128, 0, 128, 0.5)" variant="elevated">
+        <v-chip v-if="book.status==='read'" class="book-status" :class="book.status" variant="elevated">
           <v-icon>mdi-check-all</v-icon>
         </v-chip>
-        <v-chip v-if="book.status==='borrowed'" color="rgba(255, 0, 0, 0.5)" variant="elevated">
+        <v-chip v-if="book.status==='borrowed'" class="book-status" :class="book.status" variant="elevated">
           <v-icon>mdi-account-arrow-right</v-icon>
         </v-chip>
       </div>
@@ -61,6 +61,26 @@ const markAsReading = (book) => {
 </template>
 
 <style scoped lang="sass">
-.book-actions
-  //background: rgba(0, 0, 0, .5)
+.chip-container
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  display: flex
+  justify-content: end
+  padding: 5px
+  color: rgba(0, 128, 0, 0.5)
+
+
+.book-status
+  background: rgba(255, 255, 255, 0.71)
+
+.reading
+  color: green
+
+.read
+  color: purple
+
+.borrowed
+  color: red
 </style>
