@@ -12,6 +12,7 @@ import { VTreeview } from 'vuetify/labs/VTreeview'
 import router from '@/router'
 
 import { VuetifyTheme, themes } from '@/plugins/vuetify'
+import '@/assets/main.sass'
 import App from '@/app.vue'
 
 const app = createApp(App)

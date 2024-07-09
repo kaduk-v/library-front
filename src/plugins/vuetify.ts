@@ -6,10 +6,11 @@ export enum VuetifyTheme {
 }
 
 export const themes: Record<VuetifyTheme, ThemeDefinition> = {
-
   [VuetifyTheme.Light]: {
     colors: {
-      primary: '#8c57ff',
+      background: '#f4f5fb',
+      surface: '#fff',
+      primary: '#8b57ff',
       secondary: '#424242',
       accent: '#16b1ff',
       error: '#FF5252',
@@ -21,13 +22,15 @@ export const themes: Record<VuetifyTheme, ThemeDefinition> = {
 
   [VuetifyTheme.Dark]: {
     colors: {
-      primary: '#9163f4',
-      secondary: '#424242',
-      accent: '#FF4081',
-      error: '#FF5252',
-      info: '#9163f4',
-      success: '#4CAF50',
-      warning: '#FB8C00',
+      primary: '#61AFEF',
+      secondary: '#98C379',
+      accent: '#E06C75',
+      background: '#282C34',
+      surface: '#3C4048',
+      error: '#E06C75',
+      info: '#61AFEF',
+      success: '#98C379',
+      warning: '#E5C07B',
     },
   },
 }

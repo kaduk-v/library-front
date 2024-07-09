@@ -1,0 +1,12 @@
+@import '@/assets/theme.sass'
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  margin: 0
+  font-weight: normal
+
+body
+  @include theme-background-color(background)
+  @include theme-color(primary)

@@ -9,7 +9,7 @@ import AppHeader from '@/components/common/app-header.component.vue'
   <AppHeader />
   <CategoryNavigation />
 
-  <v-main>
+  <v-main class="">
     <BookFilter />
     <BookList />
   </v-main>
