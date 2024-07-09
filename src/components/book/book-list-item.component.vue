@@ -73,7 +73,8 @@ const markAsReading = (book) => {
 
 
 .book-status
-  background: rgba(255, 255, 255, 0.71)
+  background-color: rgba(249, 252, 255, 0.46)
+  background-image: linear-gradient(147deg, rgba(249, 252, 255, 0.51) 0%, rgba(222, 228, 234, 0.67) 74%)
 
 .reading
   color: green

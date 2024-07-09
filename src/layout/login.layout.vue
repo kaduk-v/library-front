@@ -32,18 +32,14 @@ const login = () => {
 <template>
   <v-container class="fill-height">
     <v-row class="d-flex justify-center align-center">
-      <v-col cols="12" sm="6" md="4" lg="4">
+      <v-col cols="12" sm="6" md="4" lg="5">
 
-        <v-card class="pa-4">
+        <v-card class="pa-6">
           <v-card-title>
-            <v-img
-              class="mx-auto my-6"
-              max-width="228"
-              :src="logo"
-            ></v-img>
+            <v-img class="mx-auto my-6" max-width="228" :src="logo" />
           </v-card-title>
-          <v-card-text>
 
+          <v-card-text>
             <form @submit.prevent>
               <v-text-field
                 v-model="state.email"

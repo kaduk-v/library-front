@@ -28,9 +28,15 @@ const isActionsMenuOpened = ref(false)
 
     <v-app-bar-title class="title">Library</v-app-bar-title>
 
-    <v-btn prepend-icon="mdi-magnify" variant="tonal" class="search-btn">
-      <span>Search...</span>
-    </v-btn>
+    <v-text-field
+      append-icon="mdi-magnify"
+      label="Search"
+      variant="underlined"
+      clearable
+      single-line
+      width="100px"
+      color="primary"
+    />
 
     <v-spacer></v-spacer>
 

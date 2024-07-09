@@ -57,7 +57,7 @@ const books: BookItem[] = [
     title: 'Лісова пісня',
     author: 'Леся Українка',
     description: 'Драма-феєрія про кохання Мавки і Лукаша.',
-    status: 'default'
+    status: 'read'
   },
   {
     id: 8,
