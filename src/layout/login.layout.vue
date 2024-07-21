@@ -32,7 +32,7 @@ const login = () => {
 <template>
   <v-container class="fill-height">
     <v-row class="d-flex justify-center align-center">
-      <v-col cols="12" sm="6" md="4" lg="5">
+      <v-col cols="12" sm="6" md="4" lg="5" xl="2">
 
         <v-card class="pa-6">
           <v-card-title>
@@ -81,6 +81,7 @@ const login = () => {
     </v-row>
   </v-container>
 </template>
+
 <style scoped lang="sass">
 .fill-height
   min-height: 100vh

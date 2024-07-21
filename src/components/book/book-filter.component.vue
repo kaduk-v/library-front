@@ -26,6 +26,7 @@ const removeFilter = () => {
     <v-chip-group
       column
       multiple
+      selected-class="text-primary"
       v-model="selectedFilters"
       @change="applyFilters"
     >
